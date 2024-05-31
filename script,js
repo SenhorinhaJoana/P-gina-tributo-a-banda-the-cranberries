@@ -1,0 +1,9 @@
+document.addEventListener('DOMContentLoaded', () => {
+    // Add any JavaScript interactivity here
+    const galleryImages = document.querySelectorAll('.galeria-fotos img');
+    galleryImages.forEach(img => {
+        img.addEventListener('click', () => {
+            img.classList.toggle('expanded');
+        });
+    });
+});

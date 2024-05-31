@@ -1,57 +1,190 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
     background-color: #1a1a1a;
     color: aliceblue;
+    line-height: 1.6;
 }
-.topo-do-site{
-    display: flex;
-   justify-content: space-between;
-   border-bottom: white 1px solid;
-    height: 100px;
-   
-    
-}
-.topo-do-site img{
-    width: 80px;
-    height: 80px;
-    margin: 15px;
-    border-radius: 50%;
-   
-}
-.topo-do-site ul li{
-    display: inline-block;
-    padding: 30px 90px;
-    font-size: 20px;
-    cursor: pointer;  
-}
-.inicio{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
 
+/* Header and Navigation */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #333;
+    z-index: 1000;
+    border-bottom: 1px solid white;
 }
-.inicio h1{
-    cursor: pointer;  
-    margin-left:470px;
-    top: 270px;
+
+.topo-do-site {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.topo-do-site img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: aliceblue;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #575757;
+    border-radius: 5px;
+}
+
+/* Main Content */
+
+
+/* Parallax Section */
+.parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 220px 20px;
+    border-bottom: 1px solid white;
+}
+
+#inicio {
+    background: url('img/dolores-oriordan-cranberries-7.webp') no-repeat center center/cover;
+    height: 800px;
+}
+
+#inicio h1 {
     font-size: 50px;
-    rotate: 90deg;
-    position: relative;
+    
 }
-.inicio p{
+
+#inicio p {
     font-size: 20px;
 }
-.inicio img{
-    width: 400px;
-    margin-top: 20px;
-    margin-bottom: 50px;
-    border-radius: 25px;
-}   
-a{
-    text-decoration: none;
+
+.section {
+    padding: 40px 20px;
+    height: 500px;
 }
+
+.section h2 {
+    font-size: 46px;
+    color: #ffa500;
+    margin-bottom: 20px;
+    
+}
+#historia  h2{
+    text-align: center;
+    margin-top: 80px;
+}
+    
+#historia p{
+    text-align: center;
+}
+
+/* Discografia Section */
+#discografia h2{
+    margin-top: 80px;
+}
+.discografia ul {
+    list-style: none;
+    padding: 0;
+   
+   
+}
+
+.discografia li {
+    margin: 10px 0;
+    text-align: center;
+    
+}
+
+.discografia a {
+    color: #ffa500;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.discografia a:hover {
+    color: #ff4500;
+}
+.discografia h2{
+    text-align: left;
+}
+
+/* Galeria */
+#galeria h2{
+    text-align: center;
+    margin-top: 85px;
+}
+.galeria-fotos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.galeria-fotos img {
+    width: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.galeria-fotos img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    
+    width: 100%;
+    bottom: 0;
+    background-color: #333;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 900px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .galeria-fotos img {
+        width: 100%;
+    }
+}
+
 
 
 
