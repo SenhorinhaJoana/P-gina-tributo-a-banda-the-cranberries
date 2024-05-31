@@ -38,7 +38,7 @@ Bem-vindo ao meu projeto de página de fãs da banda The Cranberries! Este repos
 Aqui estão algumas capturas de tela do projeto:
 
 ### Página Inicial
-![Início](img/screenshot-inicio.png)
+![Início](img/Captura1.PNG)
 
 ### Galeria de Fotos
 ![Galeria](img/screenshot-galeria.png)
