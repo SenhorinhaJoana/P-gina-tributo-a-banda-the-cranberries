@@ -41,7 +41,7 @@ Aqui estão algumas capturas de tela do projeto:
 ![Início](img/Captura1.PNG)
 
 ### Galeria de Fotos
-![Galeria](img/screenshot-galeria.png)
+![Galeria](img/Captura2.PNG)
 
 ## Sobre Mim 🧑🏾‍💻
 
